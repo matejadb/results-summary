@@ -1,0 +1,18 @@
+/**********************************/
+/*          MEDIA QUERIES         */
+/**********************************/
+
+/**********************************/
+/*           BELOW 656px          */
+/**********************************/
+
+@media (max-width: 41em) {
+	.grid--2-cols {
+		grid-template-columns: 1fr;
+	}
+
+	.result-container {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+}
