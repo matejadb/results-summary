@@ -1,0 +1,132 @@
+/*******************************/
+/*          CONTAINER          */
+/*******************************/
+
+.container {
+	max-width: 73.6rem;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 32px;
+}
+
+/*******************************/
+/*        RESULT SECTION       */
+/*******************************/
+
+.result-container {
+	padding: 4.5rem 5.4rem;
+	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	border-radius: 32px;
+}
+
+.result-content {
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.result-content h1 {
+	color: #c8c7ff;
+}
+
+.score-container {
+	height: 20rem;
+	width: 20rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1000;
+}
+
+.score-container::after {
+	content: '';
+	width: 100%;
+	padding-bottom: 100%;
+	display: block;
+	border-radius: 50%;
+	background-image: linear-gradient(
+		hsla(256, 72%, 46%, 1),
+		hsla(241, 72%, 46%, 0)
+	);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -2;
+}
+
+.user-score {
+	color: #fff;
+}
+
+.max-score {
+	color: rgba(202, 201, 255, 0.51);
+}
+
+.result-description {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.result-description h2 {
+	color: #fff;
+}
+
+.result-description p {
+	color: #cac9ff;
+}
+
+/*******************************/
+/*       SUMMARY SECTION       */
+/*******************************/
+
+.summary-container {
+	padding: 4.45rem 4rem;
+}
+
+.summary-content {
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+}
+
+.summary-content h1 {
+	color: hsl(224, 30.4%, 27.1%);
+}
+
+.summary-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.summary-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 12px;
+	padding: 1.65rem 1.9rem;
+}
+
+.item-name {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.summary-item img {
+	display: block;
+}
+
+.summary-user-score {
+	color: hsl(224, 30%, 27%);
+}
+
+.summary-max-score {
+	color: hsla(224, 30%, 27%, 0.5);
+}
