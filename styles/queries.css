@@ -7,6 +7,10 @@
 /**********************************/
 
 @media (max-width: 41em) {
+	body {
+		justify-content: space-between;
+	}
+
 	.grid--2-cols {
 		grid-template-columns: 1fr;
 	}
