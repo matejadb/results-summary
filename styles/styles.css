@@ -6,8 +6,8 @@
 	max-width: 73.6rem;
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 32px;
-	-webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.28);
-	box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.28);
+	-webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
 }
 
 /*******************************/
@@ -16,7 +16,7 @@
 
 .result-container {
 	padding: 4.5rem 5.4rem;
-	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	background-image: var(--result-container-linear-gradient);
 	border-radius: 32px;
 }
 
@@ -49,10 +49,7 @@
 	padding-bottom: 100%;
 	display: block;
 	border-radius: 50%;
-	background-image: linear-gradient(
-		hsla(256, 72%, 46%, 1),
-		hsla(241, 72%, 46%, 0)
-	);
+	background-image: var(--circle-linear-gradient);
 	position: absolute;
 	top: 50%;
 	left: 50%;

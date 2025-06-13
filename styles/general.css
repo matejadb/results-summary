@@ -46,6 +46,33 @@
 */
 
 /*******************************/
+/*          VARIABLES          */
+/*******************************/
+
+:root {
+	--project-background: hsl(221, 100%, 96%);
+	--button-background-color: hsl(224, 30%, 27%);
+
+	--result-container-linear-gradient: linear-gradient(
+		hsl(252, 100%, 67%),
+		hsl(241, 81%, 54%)
+	);
+	--circle-linear-gradient: linear-gradient(
+		hsl(252, 100%, 67%),
+		hsl(241, 81%, 54%)
+	);
+
+	--reaction-item-background-color: #fff6f6;
+	--reaction-item-text-color: hsl(0, 100%, 67%);
+	--memory-item-background-color: #fffbf4;
+	--memory-item-text-color: hsl(39, 100%, 56%);
+	--verbal-item-background-color: #f2fcf9;
+	--verbal-item-text-color: hsl(166, 100%, 37%);
+	--visual-item-background-color: #f3f4fd;
+	--visual-item-text-color: hsl(234, 85%, 45%);
+}
+
+/*******************************/
 /*           RESETS            */
 /*******************************/
 
@@ -68,7 +95,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	background-color: hsl(221, 100%, 96%);
+	background-color: var(--project-background);
 }
 
 /************************************************/
@@ -134,7 +161,7 @@ body {
 .btn:link,
 .btn:visited {
 	display: inline-block;
-	background-color: hsl(224, 30%, 27%);
+	background-color: var(--button-background-color);
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
@@ -144,7 +171,7 @@ body {
 
 .btn:hover,
 .btn:active {
-	background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	background-image: var(--circle-linear-gradient);
 }
 
 .grid {
@@ -156,21 +183,21 @@ body {
 }
 
 .reaction {
-	background-color: #fff6f6;
-	color: hsl(0, 100%, 67%);
+	background-color: var(--reaction-item-background-color);
+	color: var(--reaction-item-text-color);
 }
 
 .memory {
-	background-color: #fffbf4;
-	color: hsl(39, 100%, 56%);
+	background-color: var(--memory-item-background-color);
+	color: var(--memory-item-text-color);
 }
 
 .verbal {
-	background-color: #f2fcf9;
-	color: hsl(166, 100%, 37%);
+	background-color: var(--verbal-item-background-color);
+	color: var(--verbal-item-text-color);
 }
 
 .visual {
-	background-color: #f3f4fd;
-	color: hsl(234, 85%, 45%);
+	background-color: var(--visual-item-background-color);
+	color: var(--visual-item-text-color);
 }
