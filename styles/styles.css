@@ -132,3 +132,14 @@
 .summary-max-score {
 	color: hsla(224, 30%, 27%, 0.5);
 }
+
+/*******************************/
+/*     ATTRIBUTION SECTION     */
+/*******************************/
+
+.attribution {
+	font-size: 1.1rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
